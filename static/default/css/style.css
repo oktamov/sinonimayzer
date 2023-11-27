@@ -1,0 +1,103 @@
+body{
+    background: #eaf0ff;
+    font-family:'RedactorFont';
+    font-size: 16px;
+}
+.redactor-toolbar{
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+.marked-underlined{
+    border-bottom: 2px solid rgb(74, 110, 224);
+    padding: 4px;
+}
+.marked-active{
+    background: #DBEBFF;
+}
+
+.redactor-editor {
+    min-height: 480px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, Arial !important;
+    font-size: 16px !important;
+    border: 0 !important;
+}
+.redactor-editor p{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, Arial !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+}
+.div-synonyms{
+    width:100%;
+    height: 480px;
+    overflow-y:scroll;
+    padding:4px 12px;
+}
+.card-synonyms{
+    border-radius: 10px;
+    padding: 16px 16px 32px 16px;
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 5%), 0px 4px 20px rgb(0 0 0 / 15%);
+    margin: 8px 4px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.card-synonyms-active{
+    box-shadow: 0px 0px 0px 2px rgb(100, 149, 237), 0px 4px 20px rgb(100, 149, 237);
+}
+.card-item-origin{
+    border-radius: 5px;
+    background-color: darkblue;
+    margin: 4px;
+    color:#fff;
+    padding:4px 12px;
+    cursor: pointer;
+    width:100%;
+}
+
+.card-item-swap{
+    border-radius: 5px;
+    color:#fff;
+    margin: 4px;
+    background-color: rgb(74, 110, 224);
+    padding: 4px 12px;
+    cursor: pointer;
+}
+.div-db{
+    padding-top:48px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.loader {
+    position: absolute;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(74, 110, 224);
+    width: 120px;
+    left: 50%;
+    margin-top: -60px;
+    top: 50%;
+    margin-left: -60px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#words, #synonyms{
+    margin-left: 4px;
+}
+.hidden{
+    display: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}

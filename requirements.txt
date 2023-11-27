@@ -1,0 +1,4 @@
+django==4.2.7
+requests==2.31.0
+simplejson==3.19.2
+django-cors-headers==4.3.1
